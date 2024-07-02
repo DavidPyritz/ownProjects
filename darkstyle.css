@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    background-image: url('./img/space-1451654_1280.png');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+.sun {
+    width: 110%;
+}
+
+
+
+.myText1 {
+    font-size: 20px;
+    color: aqua;
+}
+
+.mercur {
+    width: 50%;
+    margin-top: 200px;
+}
+
+.venus {
+    width: 30%;
+    margin-top: 320px;
+}
+
+.earth {
+    width: 90%;
+    margin-top: 500px;
+}
+
+.moon {
+    width: 30%;
+    margin-top: 500px;
+}
+
+.mars {
+    width: 30%;
+    margin-top: 500px;
+}
+
+.jupiter {
+    width: 120%;
+    margin-top: 500px;
+}
+
+.saturn {
+    width: 100%;
+    margin-top: 500px;
+}
+
+.uranus {
+    width: 70%;
+    margin-top: 120px;
+}
+
+.neptune {
+    width: 30%;
+    margin-bottom: 120px;
+}
+
+.planets {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navImage {
+    height: auto;
+    margin-left: 16px;
+    object-fit: contain;
+
+
+}
+
+.navImage:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 4px #4514da)
+}
+
+.header {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    width: 80%;
+    font-size: 24px;
+    color: #9F0908;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+}
+
+.headerstyle {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.header a:hover {
+    text-decoration: none;
+    color: aqua;
+}
+
+.navLink {
+    text-decoration: none;
+    margin-left: 16px;
+    color: #1a1ae0;
+}
+
+input::placeholder {
+    color: black;
+
+}
+
+.daten {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    border-radius: 15px;
+    background-color: rgb(98, 59, 165);
+    border: 4px inset rgb(98, 59, 165);
+}
+
+.daten:hover {
+    color: aqua;
+
+}
+
+.dateneingabe {
+    width: 71%;
+    background-color: rgb(98, 59, 165);
+}

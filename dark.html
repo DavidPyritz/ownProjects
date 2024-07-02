@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weltenraum</title>
+    <link rel="stylesheet" href="darkstyle.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="planets">
+            <div class="header">
+                <nav class="headerstyle">
+                    <a id="translate6" class="navLink hide-mobile" href="./img/sun-11582_1280.jpg">SONNE</a>
+                    <a id="translate5" class="navLink hide-mobile" href="./img/mercury-11591_640.png">MERKUR</a>
+                    <a id="translate7" class="navLink hide-mobile" href="./img/venus-11022_1280.jpg">VENUS</a>
+                    <a id="translate8" class="navLink hide-mobile" href="./img/earth-1617121_1280.jpg">ERDE</a>
+                    <a id="translate6" class="navLink hide-mobile" href="./img/moon-1990272_1280.jpg">MOND</a>
+                    <a id="translate5" class="navLink hide-mobile" href="./img/mars-11012_1280.jpg">MARS</a>
+                    <a id="translate7" class="navLink hide-mobile" href="./img/jupiter-6595135_1280.jpg">JUPITER</a>
+                    <a id="translate8" class="navLink hide-mobile" href="./img/saturn-5255043_1280.jpg">SATURN</a>
+                    <a id="translate7" class="navLink hide-mobile" href="./img/solar-system-7304231_1280.jpg">URANUS</a>
+                    <a id="translate8" class="navLink hide-mobile" href="./img/neptune-67537_1280.jpg">NEPTUN</a>
+                </nav>
+            </div>
+            <div class="myText1" id="myText">
+                <img class="sun navImage" src="./img/sun-11582_1280.jpg">
+                <input required type="number" max="6000" id="eingabe" placeholder="Oberflächen Temperatur"
+                    class="dateneingabe"><button class="daten" onclick="getInput()">Daten Klick</button>
+                <input required type="number" max="15000000" id="eingabe2" placeholder="Kerntemperatur"
+                    class="dateneingabe"><button class="daten" onclick="getInput2()">Daten Klick</button>
+            </div>
+            <div>
+                <img class="mercur navImage" src="./img/mercury-11591_640.png">
+            </div>
+            <div>
+                <img class="venus navImage" src="./img/venus-11022_1280.jpg">
+            </div>
+            <div>
+                <img class="earth navImage" src="./img/earth-1617121_1280.jpg">
+            </div>
+            <div>
+                <img class="moon navImage" src="./img/moon-1990272_1280.jpg">
+            </div>
+            <div>
+                <img class="mars navImage" src="./img/mars-11012_1280.jpg">
+            </div>
+            <div>
+                <img class="jupiter navImage" src="./img/jupiter-6595135_1280.jpg">
+            </div>
+            <div>
+                <img class="saturn navImage" src="./img/saturn-5255043_1280.jpg">
+            </div>
+            <div>
+                <img class="uranus navImage" src="./img/solar-system-7304231_1280.jpg">
+            </div>
+            <div>
+                <img class="neptune navImage" src="./img/neptune-67537_1280.jpg">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container footer">
+        <div>
+            (c) Copyright 2024 David Pyritz<br>
+        </div>
+
+        <div>
+            <a href="impressum.html" class="footer-link">Impressum</a>
+            | <a href="datenschutz.html" class="footer-link2">Datenschutz</a>
+        </div>
+        <br>
+    </div>
+
+    <script>
+        function getInput() {
+            let vision = document.getElementById('eingabe');
+            document.getElementById('myText').innerHTML = `Die Oberflächentemperatur beträgt: 6.000 Grad Celsius<br><br>${vision.value}`;
+        }
+
+        function getInput2() {
+            let vision = document.getElementById('eingabe2');
+            document.getElementById('myText').innerHTML = `Die Kerntemperatur beträgt: 15 Millionen Grad Celsius<br><br>${vision.value}`;
+        }
+
+    </script>
+
+</body>
+
+</html>
